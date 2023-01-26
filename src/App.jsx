@@ -49,7 +49,7 @@ export default function App () {
       </section>
       <section className='flex flex-col gap-2 mt-2 animate-in fade-in zoom-in-95'>
         <h4 className='mx-auto text-gray-300 text-2xl'>Turn</h4>
-        <div className='flex gap-4'>
+        <div className='flex gap-4 selection:bg-amber-600'>
           <Square isSelected={turn === TURNS.X}>
             {TURNS.X}
           </Square>
