@@ -47,13 +47,16 @@ export default function App () {
           )
         })}
       </section>
-      <section className='flex gap-4 mt-4 animate-in fade-in zoom-in-95'>
-        <Square isSelected={turn === TURNS.X}>
-          {TURNS.X}
-        </Square>
-        <Square isSelected={turn === TURNS.O}>
-          {TURNS.O}
-        </Square>
+      <section className='flex flex-col gap-2 mt-2 animate-in fade-in zoom-in-95'>
+        <h4 className='mx-auto text-gray-300 text-2xl'>Turn</h4>
+        <div className='flex gap-4'>
+          <Square isSelected={turn === TURNS.X}>
+            {TURNS.X}
+          </Square>
+          <Square isSelected={turn === TURNS.O}>
+            {TURNS.O}
+          </Square>
+        </div>
       </section>
       {
         winner !== null && <ModalEndGame resetGame={resetGame} winner={winner} />

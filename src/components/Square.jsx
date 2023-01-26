@@ -1,9 +1,12 @@
-export default function Square ({ children, index, isSelected, updateBoard = () => null }) {
+export default function Square ({
+  children,
+  index,
+  isSelected,
+  updateBoard = () => null
+}) {
   const handleClick = () => {
     updateBoard(index)
   }
-
-  // const classNames = isSelected ? 'bg-[#09f] hover:bg-[#09a] text-white' : ''
   const classNames = isSelected ? 'bg-amber-600 hover:bg-amber-500 text-gray-300' : ''
 
   return (
