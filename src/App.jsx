@@ -35,7 +35,7 @@ export default function App () {
 
   return (
     <main className='flex flex-col items-center justify-center min-h-screen bg-slate-800'>
-      <section className='grid grid-cols-3 gap-4 p-4 bg-stone-900 rounded-lg'>
+      <section className='grid grid-cols-3 gap-4 p-4 bg-stone-900 rounded-lg animate-in fade-in zoom-in-95'>
         {board.map((square, index) => {
           return (
             <Square updateBoard={updateBoard} key={index} index={index}>
@@ -44,7 +44,7 @@ export default function App () {
           )
         })}
       </section>
-      <section className='flex gap-4 mt-4'>
+      <section className='flex gap-4 mt-4 animate-in fade-in zoom-in-95'>
         <Square isSelected={turn === TURNS.X}>
           {TURNS.X}
         </Square>
