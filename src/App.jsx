@@ -34,7 +34,10 @@ export default function App () {
   }
 
   return (
-    <main className='flex flex-col items-center justify-center min-h-screen bg-slate-800'>
+    <main
+      className='flex flex-col items-center justify-center min-h-screen bg-slate-800
+      bg-gradient-to-b from-slate-800 to-slate-700'
+    >
       <section className='grid grid-cols-3 gap-4 p-4 bg-stone-900 rounded-lg animate-in fade-in zoom-in-95'>
         {board.map((square, index) => {
           return (

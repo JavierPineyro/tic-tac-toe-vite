@@ -14,8 +14,13 @@ export default function ModalEndGame ({ winner, resetGame }) {
           <header>
             <h3 className='selection:bg-amber-600 text-6xl'>{textModal}</h3>
           </header>
-          <footer className='flex items-center justify-center w-full'>
-            <button onClick={handleClick} className='text-3xl px-4 py-1 rounded-lg hover:bg-zinc-600 transition-colors bg-zinc-700 select-none'>Reset</button>
+          <footer className='mx-auto'>
+            <button
+              onClick={handleClick}
+              className='text-3xl px-6 py-2 rounded-lg transition-colors bg-amber-600 hover:bg-amber-500 line text-gray-300 hover:text-gray-200 select-none '
+            >
+              reset
+            </button>
           </footer>
         </section>
       </div>
