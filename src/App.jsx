@@ -5,6 +5,7 @@ import ModalEndGame from './components/ModalEndGame'
 
 import { TURNS } from './constants'
 import { checkGameHasEnded, checkNewWinner } from './utils'
+import confetti from 'canvas-confetti'
 
 export default function App () {
   const [board, setBoard] = useState(Array(9).fill(null))
@@ -28,6 +29,7 @@ export default function App () {
     const newWinner = checkNewWinner(newBoard)
     if (newWinner) {
       setWinner(newWinner)
+      confetti()
     } else if (checkGameHasEnded(newBoard)) {
       setWinner(false)
     }
