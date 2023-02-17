@@ -27,6 +27,10 @@
   "eslintConfig": {
     "extends": [
       "./node_modules/standard/eslintrc.json"
-    ]
+    ],
+    "rules": {
+      "space-before-function-paren": "off",
+      "comma-dangle": "off"
+    }
   }
 }
