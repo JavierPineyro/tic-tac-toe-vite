@@ -5,7 +5,7 @@ export default function ModalEndGame ({ winner, resetGame }) {
   const textModal = winner ? `Winner ${winner}` : 'Empate'
 
   return (
-    <div className='flex flex-col absolute items-center justify-center text-white'>
+    <div className='flex flex-col absolute z-9999 items-center justify-center text-white'>
       <div className='relative w-screen h-screen bg-zinc-700 opacity-80 top-0 left-0' />
       <div className='absolute flex justify-center'>
         <section
