@@ -4,7 +4,8 @@ export const checkNewWinner = (game) => {
   for (const combination of INDEX_WINNER_COMBINATIONS) {
     const [valueA, valueB, valueC] = combination
 
-    const isWinner = game[valueA] === game[valueB] &&
+    const isWinner =
+      game[valueA] === game[valueB] &&
       game[valueB] === game[valueC] &&
       game[valueA] !== null
 
@@ -16,5 +17,5 @@ export const checkNewWinner = (game) => {
 }
 
 export const checkGameHasEnded = (game) => {
-  return game.every(item => item !== null)
+  return game.every((item) => item !== null)
 }
